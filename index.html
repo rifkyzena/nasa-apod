@@ -6,7 +6,7 @@
     <title>NASA APOD by Priori</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
-    <!-- ZTM Favicon -->
+    <!-- Default Favicon -->
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 </head>
 <body>
@@ -14,44 +14,26 @@
     <div class="loader hidden">
         <img src="rocket.svg" alt="Rocket Loading Animation">
     </div>
-    <!-- Container!! -->
+    <!-- Container -->
     <div class="container">
         <!-- Navigation -->
         <div class="navigation-container">
             <span class="background"></span>
             <!-- Results Nav -->
             <span class="navigation-items" id="resultsNav">
-                <h3 class="clickable">Favorites</h3>
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
                 <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-                <h3 class="clickable">Load More</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
             </span>
-            <!-- Favorites Nav-->
+            <!-- Favorites Nav -->
             <span class="navigation-items hidden" id="favoritesNav">
-                <h3 class="clickable">Load More NASA Images</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
             </span>
         </div>
         <!-- Images Container -->
-        <div class="images-container">
-
-            <div class="card">
-                <a href="" title="View Full Image" target="_blank">
-                    <img src="https://apod.nasa.gov/apod/image/2211/NGC-1097-LRGB_Ha-rev-12-2022.jpg" alt="NASA Picture of the Day" class="card-img-top">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Title of Image</h5>
-                    <p class="clickable">Add to Favorites</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit corrupti autem nisi distinctio odit cum possimus consequuntur? Facere praesentium, mollitia nulla error aliquid animi! Voluptate natus quas perferendis nihil.
-                    </p>
-                    <small class="text-muted">
-                        <strong>16-11-2022</strong>
-                        <span>Copyright Info</span>
-                    </small>
-                </div>
-            </div>
-
-        </div>
+        <div class="images-container"></div>
     </div>
-    <!-- Save Confirmation!! -->
+    <!-- Save Confirmation -->
     <div class="save-confirmed" hidden>
         <h1>ADDED!</h1>
     </div>
