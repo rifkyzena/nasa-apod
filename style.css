@@ -66,7 +66,7 @@ body {
 }
 
 .clickable {
-  color: #3d1a63;
+  color: #881f65;
   cursor: pointer;
   user-select: none;
 }
@@ -84,7 +84,7 @@ body {
 .card {
   background: white;
   margin: 10px 10px 20px;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -96,6 +96,7 @@ body {
 .card-img-top {
   width: 100%;
   height: auto;
+  border-radius: 7px 7px 0 0;
 }
 
 .card-body {
@@ -112,7 +113,7 @@ body {
 .save-confirmed {
   background: white;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   position: fixed;
@@ -131,13 +132,20 @@ body {
   body {
     line-height: 1.4rem;
     font-size: 0.9rem;
+    text-align: justify
 
   }
 
+  .images-container{
+    width: 100%
+  }
 
   .card-title {
     font-size: 20px;
   }
 
+  .save-confirmed{
+    right: 25px;
+  }
   
 }
